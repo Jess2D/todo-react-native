@@ -1,11 +1,12 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import PrimaryButton from './views/_shared-components/PrimaryButton';
 
 export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
+        <PrimaryButton onPress={() => alert('pressed')}>Todo List</PrimaryButton>
       </View>
     );
   }
